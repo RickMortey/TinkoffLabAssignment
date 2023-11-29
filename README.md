@@ -11,4 +11,41 @@
 
 В связи с чем была предпринята попытка обучить модель, где сгенерированные пары `winner`-`loser` брались бы на основе промта из датасета `imdb`. Зачатки этого вы можете видеть в текущем ноутбуке. Она не завершена.
 
+### Запуск
 Для запуска ноутбука его нужно развернуть в среде с библиотеками, указанными в `requirements.txt`
+Для этого можно использовать `venv`
+
+Гайд:
+# Переходим в директорию, где вы хотите разместить репозиторий,
+$ cd <ваша выбранная директория>
+
+# Клонируем репозиторий с github.com
+$ git clone git@github.com:RickMortey/TinkoffLabAssignment.git
+
+# Переходим в директорию склонированного репозитория
+$ cd <мой репозиторий>
+
+Версия Питона, на которой велась разработка: `3.10.12`
+
+$ pyenv install 3.10.12
+
+$ cd <путь к склонированному репозиторию>
+$ ~/.pyenv/versions/3.10.12/bin/python -m venv venv
+
+$ source env/bin/activate
+
+# установка зависимостей
+(venv)$ pip install --upgrade -r requirements.txt
+
+#создание ядра в venv
+(venv)$ ipython kernel install --user --name=venv
+
+Убедитесь, что запуск ноутбука производится из под `env`
+
+![image](https://github.com/RickMortey/TinkoffLabAssignment/assets/47125236/d887f5bc-8651-4411-9390-a58a0c1167e9)
+
+#Удаление ядра
+(venv)$ jupyter-kernelspec uninstall venv
+
+#Выход из venv
+(venv)$ deactivate
