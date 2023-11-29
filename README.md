@@ -34,18 +34,22 @@ $ ~/.pyenv/versions/3.10.12/bin/python -m venv venv
 
 $ source env/bin/activate
 
-# установка зависимостей
+# Установка зависимостей
+
 (venv)$ pip install --upgrade -r requirements.txt
 
-#создание ядра в venv
+# Создание ядра в venv
+
 (venv)$ ipython kernel install --user --name=venv
 
 Убедитесь, что запуск ноутбука производится из под `env`
 
 ![image](https://github.com/RickMortey/TinkoffLabAssignment/assets/47125236/d887f5bc-8651-4411-9390-a58a0c1167e9)
 
-#Удаление ядра
+# Удаление ядра
+
 (venv)$ jupyter-kernelspec uninstall venv
 
-#Выход из venv
+# Выход из venv
+
 (venv)$ deactivate
