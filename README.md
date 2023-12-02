@@ -20,6 +20,8 @@
 
 Далее была обучена модель с `sigmoid loss`.
 
+Логи обучения: в wandb. График `Level 1 with prompts (sigmoid loss)`
+
 Результаты:
 
 Средний positive score на eval dataset на стандартной модели: 0.8849
